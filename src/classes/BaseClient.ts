@@ -14,7 +14,7 @@ export class BaseClient implements BaseClientDescriptor {
         this.path = path;
     }
 
-    async get<T = any>(): Promise<AxiosResponse<T>> {
+    async get<T>(): Promise<AxiosResponse<T>> {
         return await axios.get<T>(this.baseUrl + this.path);
     }
 }

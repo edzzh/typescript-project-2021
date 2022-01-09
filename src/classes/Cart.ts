@@ -9,7 +9,7 @@ export class Cart {
         this.productArray = productArray;
     }
 
-    totalPrice(productArray: Product[]): number {
+    totalPrice(): number {
         let price = 0;
 
         for (let i = 0; i < this.productArray.length; i++) {
