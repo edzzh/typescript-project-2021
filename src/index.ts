@@ -109,7 +109,7 @@ setTimeout(() => {
         location: "Riga"
     };
 
-    console.log("Partial Utility:", store1);
+    console.log("Partial Utility: ", store1);
 
     const store2: Required<Store> = {
         name: "Elvi",
@@ -119,7 +119,7 @@ setTimeout(() => {
         owner: "Janis Slieka"
     };
 
-    console.log("Required Utility", store2);
+    console.log("Required Utility: ", store2);
 
     const store3: Pick<Store, "name" | "location" | "owner"> = {
         name: "Lats",
@@ -127,5 +127,5 @@ setTimeout(() => {
         owner: "Bobs Lielais"
     };
 
-    console.log("Pick Utility", store3);
+    console.log("Pick Utility: ", store3);
 }, 5000);
