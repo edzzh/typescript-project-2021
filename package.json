@@ -1,0 +1,25 @@
+{
+  "name": "typescript-final-2021",
+  "version": "1.0.0",
+  "description": "TypeScript Intermediate Final Work",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "start": "npm run build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Edgars Hartmanis",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "eslint": "^8.6.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
